@@ -1,0 +1,13 @@
+12
+70/home/kc900201/projects/typescript_udemy_web_framework/dist/index.html1693307347147689674 0
+102/home/kc900201/projects/typescript_udemy_web_framework/dist/typescript_udemy_web_framework.3464ddca.js1693307220327685772 0
+106/home/kc900201/projects/typescript_udemy_web_framework/dist/typescript_udemy_web_framework.3464ddca.js.map1693307220327685772 0
+81/home/kc900201/projects/typescript_udemy_web_framework/dist/index.b71e74eb.js.map1693307362677688412 0
+65/home/kc900201/projects/typescript_udemy_web_framework/index.html1693307346997689660 0
+77/home/kc900201/projects/typescript_udemy_web_framework/dist/index.b71e74eb.js1693307362677688412 0
+59/home/kc900201/projects/typescript_udemy_web_framework/dist1693307362677688412 1
+64/home/kc900201/projects/typescript_udemy_web_framework/README.md1693307075967691001 0
+67/home/kc900201/projects/typescript_udemy_web_framework/package.json1693307136087692449 0
+67/home/kc900201/projects/typescript_udemy_web_framework/src/index.ts1693307362577688417 0
+58/home/kc900201/projects/typescript_udemy_web_framework/src1693307337377688507 1
+54/home/kc900201/projects/typescript_udemy_web_framework1693307278807686733 1
