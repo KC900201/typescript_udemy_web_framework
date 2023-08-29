@@ -584,6 +584,14 @@ user.set({
     name: "Jenny"
 });
 console.log(user.get("name"));
+user.on("change", ()=>{
+    console.log("change triggered");
+});
+user.on("save", ()=>{
+    console.log("save");
+});
+console.log(user);
+user.trigger("change");
 
 },{"./models/User":"4rcHn"}],"4rcHn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -600,7 +608,16 @@ class User {
     set(update) {
         Object.assign(this.data, update);
     }
-    on(eventName, callback) {}
+    on(eventName, callback) {
+        const handlers = this.events[eventName] || [];
+        handlers.push(callback);
+        this.events[eventName] = handlers;
+    }
+    trigger(eventName) {
+        const handlers = this.events[eventName];
+        if (!handlers || handlers.length === 0) return;
+        handlers.forEach((callback)=>callback());
+    }
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"2iQN8"}],"2iQN8":[function(require,module,exports) {
