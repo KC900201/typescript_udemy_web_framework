@@ -1,4 +1,5 @@
 interface UserProps  {
+  id?: string
   name?: string
   age?: number
 }
@@ -32,6 +33,10 @@ export class User {
     }
 
     handlers.forEach(callback => callback())
+  }
+
+  fetch(): void {
+    
   }
 }
 
