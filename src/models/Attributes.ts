@@ -12,5 +12,9 @@ export class Attributes<T extends object> {
     Object.assign(this.data, update)
   }
 
+  getAll(): T {
+    return this.data
+  }
+
 }
 
