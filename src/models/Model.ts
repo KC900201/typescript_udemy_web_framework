@@ -1,6 +1,6 @@
 import { AxiosPromise, AxiosResponse } from "axios"
 
-interface ID {
+export interface ID {
   id?: number
 }
 

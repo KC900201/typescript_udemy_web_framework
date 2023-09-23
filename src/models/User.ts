@@ -11,7 +11,7 @@ export interface UserProps  {
   age?: number
 }
 
-const rootUrl = 'http://localhost:3000/users'
+export const rootUrl = 'http://localhost:3000/users'
 
 export class User extends Model<UserProps> {
   static buildUser(attrs: UserProps): User {
@@ -20,6 +20,11 @@ export class User extends Model<UserProps> {
       new Eventing(),
       new Sync<UserProps>(rootUrl),
     )
+  }
+
+  setRandomAge(): void {
+    const age = Math.round(Math.random() * 100)
+    this.set({ age })
   }
 
   static buildUserCollection(): Collection<User, UserProps> {

@@ -1,7 +1,5 @@
-import { User, UserProps } from "./User"
 import { Eventing } from "./Eventing"
 import axios, { AxiosResponse } from "axios"
-
 
 export class Collection<T, K> {
   models: T[] = []
@@ -23,6 +21,8 @@ export class Collection<T, K> {
       response.data.forEach((value: K) => {
         this.models.push(this.deserialize(value))
       });
+
+      this.trigger('change')
     })
   }
 
